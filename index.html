@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper and Scissors Games</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media screen and (max-width:480px) {
+            .swal2-container{
+            background-size: contain !important;
+
+        }
+        .swal2-popup{
+            display: none;
+        }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock,Paper and Scissors Games</h1>
+        <p>You Have Only <span id="number">10</span> Chances</p>
+        <div class="btn">
+            <button class="rock">✊</button>
+            <button class="paper">🖐️</button>
+            <button class="scissors">✌️</button>
+        </div>
+        <h3 class="player-select">You: <span id="p-select"></span></h3>
+        <h3 class="computer-select">computer: <span id="c-select"></span></h3>
+        <div class="message"></div>
+      
+        <div class="player">Player Score: <span id="player"></span></div>
+        <div class="computer">Computer Score: <span id="computer"></span></div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
